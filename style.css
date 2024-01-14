@@ -1,0 +1,287 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;700&display=swap'); */
+
+/* @
+ */
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    scroll-behavior: smooth;
+}
+/* text edits  */
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav__border {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: ; /* Set the color of the circular border */
+    padding: 10px; /* Adjust the padding as needed */
+  }
+
+  
+
+
+body{
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+.logo__img{
+    width: 180px;
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 40px;
+
+}
+
+.nav__list{
+    list-style:  none;
+    display: flex;
+    align-items: center;
+}
+
+.right__nav--list{
+    margin-left: 20px;
+}
+
+.inner__main--nav{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+    max-height: 980px;
+    filter: blur(0); /* Initial blur level set to 0 (no blur) */
+    transition: filter 0.1s; 
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+}
+.nav__link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__bar{
+    width: 100%;
+}
+
+.sydney{
+    color: #5978A9 ;
+}
+
+/* SIZING AND POSITION FOR TEXT */
+
+h2{
+    font-size: 36px;
+    color: white;
+}
+
+/* verse */
+.front{
+    text-align: center;
+    color: black;
+    padding: 20px 0 15px 0;
+}
+
+
+.image-section {
+    position: relative;
+}
+
+.text-overlay {
+    color: white !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s; /* Smooth opacity transition */
+}
+
+
+.welcome{
+    font-size: 68px;
+}
+.welcome__font{
+    font-size: 22px ;
+}
+
+/* Information */
+.info{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 50px; */
+    /* padding-right: 100px;
+    padding-left: 100px; */
+}
+.story__title{
+    color:#000  ;
+}
+.story__color{
+    background-color: #fffefc;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Optional: Center the element itself horizontally */
+    border: 0px solid #ccc;
+    font-size: 20px;
+    max-width: 50%;
+    padding-bottom: 20px;
+}
+.layout{
+    /* display: flex;
+    align-items: center; */
+
+    line-height: 2;
+    padding-left: 5px;
+    background-color: #fffefc;
+    padding-left: 20px;
+    text-align: center;
+    
+
+    ;
+}
+
+
+.youtube{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* location */
+.layout__map{
+    background-color: #fffefc;
+    display: flex;
+    line-height: 2;
+    
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    border:1px solid black;    
+}
+.maps__title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.layout__map{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+/* meeting times */
+
+  .meeting__body{
+    
+    text-align: center;
+  }
+.meeting__body p{
+    font-size: 15px;
+margin-bottom: 5px;
+color: black;
+}
+.meeting__body h4{
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color: black;
+}
+
+ 
+  .schedule-table {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sunday__worship,
+  .prayer__meetings,
+  .life__groups {
+    width: 30%; /* Adjust the width of each section */
+    padding: 10px;
+     /* Optional: Add borders for a table-like appearance */
+    margin: 10px; /* Optional: Add spacing between sections */
+  }
+
+/* leadership */
+.layout__leadership{
+    background-color: #fffefc;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.leadership__h2{
+    color: black;
+}
+
+/* BORDERS FOR LOCATION AND TIME  */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100vw / 3);
+    /* border: 1px solid lightgrey; */
+    margin: 0 16px;
+}
+
+.border__sunday {
+    /* border-right: 2px solid #6ca589; */
+    
+}
+.border__meetings {
+    /* border-top: 8px solid #896ca5; */
+    border-radius: 8px;
+}
+.border__lg {
+    /* border-left: 2px solid #a5896c; */
+    
+}
+
+.vertical-line {
+    height: 100px; /* Set the height to the desired length */
+    width: 2px;
+    background: #bf9b5f;
+    margin: auto;
+    padding: auto;
+}
