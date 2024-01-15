@@ -6,13 +6,21 @@
 
  
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
-
+/* REUSABLE COMPONENTS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Inter;
     scroll-behavior: smooth;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer p{
+    font-size: 12px;
 }
 /* text edits  */
   
