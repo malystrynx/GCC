@@ -23,3 +23,19 @@ function handleScroll() {
 
 // Listen for the first scroll event and call the handleScroll function
 window.addEventListener('scroll', handleScroll);
+
+
+
+var scrolling = document.querySelector('.scrolling');
+window.addEventListener('scroll', handleScroll);
+
+function handleScroll() {
+    if (window.scrollY >150){
+        scrolling.classList.add('active');
+
+    }
+
+    else{
+        scrolling.classList.remove('active')
+    }
+}
