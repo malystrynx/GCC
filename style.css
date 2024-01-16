@@ -404,3 +404,28 @@ color: white;
   .custom-position {
     margin-left: auto; /* This will push the button to the right */
   }
+
+  .read__more{
+     text-decoration: none; 
+  }
+
+
+  /* VISION */
+
+  .about--title{
+    color: #000;
+  }
+
+  .about--para{
+    
+  }
+
+
+  /* BELIEF */
+
+  .believe--title{
+    color: black;
+  }
+
+
+  
