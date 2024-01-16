@@ -422,10 +422,467 @@ color: white;
 
 
   /* BELIEF */
-
-  .believe--title{
+.believe--picture{
+    display: flex;
+    position: inherit;
+}
+  .believe__top--title{
     color: black;
   }
 
+  .believe--title{
+    color: black;
+    text-align: center;
+  }
+.believe--section{
 
+line-height: 2;
+}
+
+
+@media (max-width: 1440px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .nav {
+      padding: 20px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 50px;
+    }
+  
+    .nav__link {
+      font-size: 14px;
+    }
+  
+    .welcome {
+      font-size: 48px;
+    }
+  
+    .info {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .story__layout {
+      padding-bottom: 50px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 80%;
+    }
+  
+    .layout {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .maps__title {
+      padding-top: 10px;
+    }
+  
+    .meeting__body p {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1.4em;
+      line-height: 1.2em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 14px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
+
+  /* Add this media query for screens up to 1024px width */
+/* Add this media query for screens up to 1024px width */
+@media (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .nav {
+      padding: 20px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 50px;
+    }
+  
+    .nav__link {
+      font-size: 14px;
+    }
+  
+    .welcome {
+      font-size: 48px;
+    }
+  
+    .info {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  
+    .story__layout {
+      padding-bottom: 50px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 80%;
+    }
+  
+    .layout {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .maps__title {
+      padding-top: 10px;
+    }
+  
+    .meeting__body p {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1.4em;
+      line-height: 1.2em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 14px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
+  
+  
+
+/* Add this media query for screens up to 768px width */
+@media (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .nav {
+      padding: 15px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 30px;
+    }
+  
+    .nav__link {
+      font-size: 13px;
+    }
+  
+    .welcome {
+      font-size: 36px;
+    }
+  
+    .info {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+    .story__layout {
+      padding-bottom: 30px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 90%;
+    }
+  
+    .layout {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  
+    .maps__title {
+      padding-top: 10px;
+    }
+  
+    .meeting__body p {
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 13px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
+  
+  /* Add this media query for screens up to 425px width */
+@media (max-width: 425px) {
+    body {
+      font-size: 10px;
+    }
+  
+    .nav {
+      padding: 10px;
+    }
+  
+    .scrolling.active {
+      padding: 16px 20px;
+    }
+  
+    .nav__link {
+      font-size: 12px;
+    }
+  
+    .welcome {
+      font-size: 24px;
+    }
+  
+    .info {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .story__layout {
+      padding-bottom: 20px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 100%;
+    }
+  
+    .layout {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+    .maps__title {
+      padding-top: 5px;
+    }
+  
+    .meeting__body p {
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 1em;
+      line-height: 1em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 12px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
+
+  /* Add this media query for screens up to 375px width */
+@media (max-width: 375px) {
+    body {
+      font-size: 9px;
+    }
+  
+    .nav {
+      padding: 8px;
+    }
+  
+    .scrolling.active {
+      padding: 14px 16px;
+    }
+  
+    .nav__link {
+      font-size: 11px;
+    }
+  
+    .welcome {
+      font-size: 20px;
+    }
+  
+    .info {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  
+    .story__layout {
+      padding-bottom: 15px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 100%;
+    }
+  
+    .layout {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+    .maps__title {
+      padding-top: 5px;
+    }
+  
+    .meeting__body p {
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 0.9em;
+      line-height: 0.9em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 10px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
+  
+  /* Add this media query for screens up to 320px width */
+@media (max-width: 320px) {
+    body {
+      font-size: 8px;
+    }
+  
+    .nav {
+      padding: 6px;
+    }
+  
+    .scrolling.active {
+      padding: 12px 14px;
+    }
+  
+    .nav__link {
+      font-size: 10px;
+    }
+  
+    .welcome {
+      font-size: 18px;
+    }
+  
+    .info {
+      padding-right: 6px;
+      padding-left: 6px;
+    }
+  
+    .story__layout {
+      padding-bottom: 12px;
+    }
+  
+    .our__story,
+    .layout__leadership {
+      max-width: 100%;
+    }
+  
+    .layout {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  
+    .maps__title {
+      padding-top: 4px;
+    }
+  
+    .meeting__body p {
+      font-size: 8px;
+      margin-bottom: 2px;
+    }
+  
+    .meeting__body h4 {
+      font-size: 0.8em;
+      line-height: 0.8em;
+    }
+  
+    .schedule-table,
+    .sunday__worship,
+    .prayer__meetings,
+    .life__groups {
+      width: 100%;
+      margin: 4px 0;
+    }
+  
+    .read-more-btn {
+      font-size: 8px;
+    }
+  
+    .custom-position {
+      margin-left: 0;
+    }
+  
+    /* Add more adjustments as needed */
+  }
   
