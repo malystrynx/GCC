@@ -357,7 +357,7 @@ color: white;
     left: 50%;
     transform: translateX(-50%);
 }
-.scroll__icon{
+/* .scroll__icon{
     width: 20px;
     height: 30px;
     border: 2px solid white;
@@ -374,7 +374,7 @@ color: white;
     background-color: white;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate;
-}
+} */
 
 @keyframes scroll{
     0%{
@@ -407,6 +407,7 @@ color: white;
 
   .read__more{
      text-decoration: none; 
+     color: white;
   }
 
 
@@ -416,9 +417,6 @@ color: white;
     color: #000;
   }
 
-  .about--para{
-    
-  }
 
 
   /* BELIEF */
@@ -472,7 +470,9 @@ line-height: 2;
   
     .our__story,
     .layout__leadership {
-      max-width: 80%;
+      display: flex;
+    max-width: 80%;
+    justify-content: flex-end;
     }
   
     .layout {
@@ -510,12 +510,24 @@ line-height: 2;
       margin-left: 0;
     }
   
-    /* Add more adjustments as needed */
   }
 
-  /* Add this media query for screens up to 1024px width */
-/* Add this media query for screens up to 1024px width */
+
 @media (max-width: 1024px) {
+.font__title{
+   font-size: 50px;
+}
+.youtube__media{
+  width: 700px;
+  height: 400px;
+}
+
+.welcome__font{
+  font-size: 15px;
+}
+  .image{
+    max-height: 800px;
+  }
     body {
       font-size: 14px;
     }
