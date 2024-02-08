@@ -287,7 +287,6 @@ color: white;
 /* leadership */
 .layout__leadership{
     background-color: #fffefc;
-    display: flex;
     align-items: center;
     line-height: 2;
     padding-left: 20px;
@@ -462,7 +461,17 @@ padding-bottom: 50px;
 
 
 
+/* Leadership */
 
+.leadership__img{
+display: flex;
+justify-content: center;
+}
+
+.about__title{
+  text-align: center;
+  font-weight: bold;
+}
 
 
 
