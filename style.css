@@ -132,7 +132,13 @@
 .nav__link:hover::after{
     opacity: 1;
 }
+.story__color{
 
+  padding-left:100px;
+}
+.button__text{
+  padding-bottom: 20px;
+}
 .nav__bar{
     width: 100%;
 }
@@ -140,7 +146,9 @@
 .sydney{
     color: #5978A9 ;
 }
-
+.front{
+  text-align: center;
+}
 /* SIZING AND POSITION FOR TEXT */
 
 h2{
@@ -194,7 +202,7 @@ padding-bottom: 100px;
 }
 .our__story{
     display: flex;
-max-width: 50%;
+    max-width: 60%;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -477,6 +485,32 @@ justify-content: center;
 
 
 
+/* Believe */
+
+.believe__section{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.believe__para{
+  width: 960px;
+  padding-bottom: 20px;
+  margin: auto;
+  float: none;
+}
+.believe__top--title{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.crca{
+  text-decoration: none;
+  color: black;
+  }
+  .crca:visited{
+    text-decoration: none;
+    color: black;
+  }
+
 
 
 
@@ -578,9 +612,7 @@ justify-content: center;
 .welcome__font{
   font-size: 15px;
 }
-.story__color{
-  max-width: 100%;
-}
+
   .image{
     max-height: 800px;
   }
