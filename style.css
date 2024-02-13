@@ -407,12 +407,19 @@ color: white;
     position: inherit;
 }
   .believe__top--title{
-    color: black;
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
   }
 
   .believe--title{
     color: black;
     text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
   }
 .believe--section{
 
@@ -454,12 +461,18 @@ padding-bottom: 50px;
 .about--para{
   display: flex;
   align-items: center;
+  font-size: 18px;
 
 }
 
 .about__text, .about__story{
-  margin-left: 400px;
-  margin-right: 400px;
+  width: 960px;
+  padding-bottom: 20px;
+  margin: auto;
+  float: none;
+  line-height: 2;
+  font-size: 18px;
+  
 }
 
 .footer{
@@ -497,6 +510,8 @@ justify-content: center;
   padding-bottom: 20px;
   margin: auto;
   float: none;
+  line-height: 2;
+  font-size: 18px;
 }
 .believe__top--title{
   text-align: center;
@@ -525,6 +540,9 @@ justify-content: center;
 
 
 @media (max-width: 1440px) {
+  .image{
+    max-height: 1000px;
+  }
     body {
       font-size: 14px;
     }
@@ -554,8 +572,7 @@ justify-content: center;
       padding-bottom: 50px;
     }
   
-    .our__story,
-    .layout__leadership {
+    .our__story {
       display: flex;
     max-width: 80%;
     justify-content: flex-end;
@@ -595,6 +612,9 @@ justify-content: center;
     .custom-position {
       margin-left: 0;
     }
+  .font__title{
+    font-size:80px;
+  }
   
   }
 
@@ -646,7 +666,12 @@ justify-content: center;
       display: flex;
     }
   
-
+    .about__image--1 {
+      max-width: 100%; /* Ensure the image does not exceed the width of its container */
+      height: auto; /* Maintain the aspect ratio of the image */
+      display: block; /* Ensure the image behaves as a block element */
+      margin: 0 auto; /* Center the image horizontally within its container */ /* Limit the maximum width to 1024px */
+  }
 
     .layout__leadership {
       max-width: 80%;
