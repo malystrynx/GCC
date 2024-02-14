@@ -439,6 +439,9 @@ line-height: 2;
   height: 100%; 
   object-fit: cover; 
 }
+.retreat__pic{
+  height: 500px;
+}
 
 .about__image--1 {
   position: absolute;
@@ -512,10 +515,6 @@ justify-content: center;
   float: none;
   line-height: 2;
   font-size: 18px;
-}
-.believe__top--title{
-  text-align: center;
-  padding-bottom: 20px;
 }
 .crca{
   text-decoration: none;
@@ -623,11 +622,16 @@ justify-content: center;
 .font__title{
    font-size: 50px;
 }
+.retreat__pic{
+  height: 400px;
+}
 .youtube__media{
   width: 700px;
   height: 400px;
 }
-
+.believe__section{
+  
+}
 
 .welcome__font{
   font-size: 15px;
@@ -673,10 +677,6 @@ justify-content: center;
       margin: 0 auto; /* Center the image horizontally within its container */ /* Limit the maximum width to 1024px */
   }
 
-    .layout__leadership {
-      max-width: 80%;
-    }
-
     .story__img{
       height: 300px;
       width: 300px;
@@ -716,6 +716,19 @@ justify-content: center;
     .custom-position {
       margin-left: 0;
     }
+    .about__text, .about__story{
+      width: 700px;
+     
+    }
+    .about__title{
+      font-size: 18px;
+    }
+    .about--para, .about__story, .believe__para{
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    
   
     /* Add more adjustments as needed */
   }
@@ -731,6 +744,7 @@ justify-content: center;
     .nav {
       padding: 15px;
     }
+    
   
     .scrolling.active {
       padding: 16px 30px;
