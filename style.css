@@ -13,6 +13,7 @@
     box-sizing: border-box;
     font-family: Inter;
     scroll-behavior: smooth;
+    /* border-style: solid; */
 }
 .scrolling{
     position: fixed;
@@ -133,8 +134,8 @@
     opacity: 1;
 }
 .story__color{
-
-  padding-left:100px;
+padding-left: 50px;
+padding-right: 50px;
 }
 .button__text{
   padding-bottom: 20px;
@@ -402,6 +403,7 @@ color: white;
 
 
   /* BELIEF */
+
 .believe--picture{
     display: flex;
     position: inherit;
@@ -440,7 +442,7 @@ line-height: 2;
   object-fit: cover; 
 }
 .retreat__pic{
-  height: 500px;
+  height: 450px;
 }
 
 .about__image--1 {
@@ -539,8 +541,14 @@ justify-content: center;
 
 
 @media (max-width: 1440px) {
+  .about__title{
+    font-size: 16px;
+  }
   .image{
     max-height: 1000px;
+  }
+  .about--title{
+    padding-top: 30px;
   }
     body {
       font-size: 14px;
@@ -569,6 +577,9 @@ justify-content: center;
   
     .story__layout {
       padding-bottom: 50px;
+padding-left: 80px;
+padding-right: 15px;
+
     }
   
     .our__story {
@@ -619,26 +630,34 @@ justify-content: center;
 
 
 @media (max-width: 1024px) {
+  
+  .believe__para{
+    max-width: 650px;
+  }
+  .leadership__h2{
+    padding-bottom: 30px;
+
+  }
 .font__title{
    font-size: 50px;
 }
 .retreat__pic{
-  height: 400px;
+  height: 350px;
 }
 .youtube__media{
   width: 700px;
   height: 400px;
 }
-.believe__section{
-  
-}
+
 
 .welcome__font{
   font-size: 15px;
 }
-
+.container{
+  height: 60vh;
+}
   .image{
-    max-height: 800px;
+    max-height: 750px;
   }
     body {
       font-size: 14px;
@@ -686,7 +705,9 @@ justify-content: center;
       padding-left: 10px;
       padding-right: 10px;
     }
-  
+  .believe__top--title{
+    top: 35%;
+  }
     .maps__title {
       padding-top: 10px;
     }
@@ -721,7 +742,7 @@ justify-content: center;
      
     }
     .about__title{
-      font-size: 18px;
+      font-size: 14px;
     }
     .about--para, .about__story, .believe__para{
       font-size: 16px;
