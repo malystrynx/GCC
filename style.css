@@ -26,8 +26,9 @@
     transition: background 0.5s,padding 0.5s;
 }
 .scrolling.active{
-    background-color:#555555 ;
+    background-color:#000000b6  ;
     padding: 16px 100px ;
+    
 }
 
 .footer{
@@ -198,7 +199,7 @@ padding-bottom: 100px;
 
 .our__story--color{
     color: black;
-    text-align: center;
+    /* text-align: center; */
 
 }
 .our__story{
@@ -458,7 +459,7 @@ line-height: 2;
 .about--title, .leadership__h2{
 font-size: 22.4px;
 text-align: center;
-padding-bottom: 50px;
+padding-bottom: 20px;
 }
 .headline{
   padding-top: 40px;
@@ -494,9 +495,14 @@ display: flex;
 justify-content: center;
 }
 
+.leadership__img1{
+  
+}
+
 .about__title{
   text-align: center;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 
@@ -512,7 +518,7 @@ justify-content: center;
 
 .believe__para{
   width: 960px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin: auto;
   float: none;
   line-height: 2;
@@ -541,8 +547,16 @@ justify-content: center;
 
 
 @media (max-width: 1440px) {
+
+  .leadership__img1{
+    height: 250px;
+  }
+  .story__color{
+    font-size: 18px
+  }
   .about__title{
-    font-size: 16px;
+    font-size: 20px;
+    
   }
   .image{
     max-height: 1000px;
@@ -563,7 +577,7 @@ justify-content: center;
     }
   
     .nav__link {
-      font-size: 14px;
+      font-size: 16px;
     }
   
     .welcome {
@@ -672,7 +686,7 @@ padding-right: 15px;
     }
   
     .nav__link {
-      font-size: 14px;
+      font-size: 12px;
     }
   
     .welcome {
