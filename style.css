@@ -95,7 +95,7 @@
 
 .image{
     width: 100%;
-    max-height: 980px;
+    max-height: 800px;
     filter: blur(0); /* Initial blur level set to 0 (no blur) */
     transition: filter 0.1s; 
     
@@ -140,7 +140,10 @@ padding-right: 50px;
 }
 .button__text{
   padding-bottom: 20px;
-}
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+text-align: center;}
 .nav__bar{
     width: 100%;
 }
@@ -199,6 +202,7 @@ padding-bottom: 100px;
 
 .our__story--color{
     color: black;
+    text-align: center;
     /* text-align: center; */
 
 }
@@ -228,8 +232,9 @@ padding-bottom: 100px;
 .youtube{
     display: flex;
     justify-content:center;
-    padding-bottom: 100px;
-    padding-top: 80px;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 75px;
 }
 .info{
     display: flex;
@@ -238,8 +243,9 @@ padding-bottom: 100px;
 
 /* location */
 .layout__map{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(11,17,17,1) 83%, rgba(7,79,94,1) 100%, rgba(0,212,255,1) 100%);
-
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(11,17,17,1) 80%, rgba(16,54,96,1) 100%, rgba(0,212,255,1) 100%);
+padding-bottom: 50px;
+padding-top:50px;
     display: flex;
     line-height: 2;
     
@@ -295,12 +301,18 @@ color: white;
   }
 
 /* leadership */
+
 .layout__leadership{
-    background-color: #fffefc;
-    align-items: center;
-    line-height: 2;
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 250px;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  
+}
+.leadership__text{
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
 }
 
 .leadership__h2{
@@ -397,14 +409,15 @@ color: white;
 
   /* VISION */
 
-  .about--title{
+  .about--title,.about--title1{
+    
     color: #000;
   }
 
 
 
   /* BELIEF */
-
+.
 .believe--picture{
     display: flex;
     position: inherit;
@@ -412,7 +425,8 @@ color: white;
   .believe__top--title{
     color: white;
     position: absolute;
-    top:40%;
+    
+    top:30%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -432,6 +446,9 @@ line-height: 2;
 
 
 /* About */
+.vision{
+  padding-top: 50px;
+}
 .container {
   position: relative;
   width: 100%;
@@ -443,7 +460,7 @@ line-height: 2;
   object-fit: cover; 
 }
 .retreat__pic{
-  height: 450px;
+  height: 425px;
 }
 
 .about__image--1 {
@@ -456,7 +473,7 @@ line-height: 2;
   bottom: 10%;
 }
 
-.about--title, .leadership__h2{
+.about--title,.about--title1, .leadership__h2{
 font-size: 22.4px;
 text-align: center;
 padding-bottom: 20px;
@@ -467,16 +484,19 @@ padding-bottom: 20px;
 .about--para{
   display: flex;
   align-items: center;
+  text-align: justify;
   font-size: 18px;
+  color: #464646;
 
 }
 
 .about__text, .about__story{
-  width: 960px;
+  
+  width: 850px;
   padding-bottom: 20px;
   margin: auto;
   float: none;
-  line-height: 2;
+  line-height: 1.5;
   font-size: 18px;
   
 }
@@ -490,17 +510,16 @@ padding-bottom: 20px;
 
 /* Leadership */
 
-.leadership__img{
+/* .leadership__img{
 display: flex;
 justify-content: center;
-}
+} */
 
 .leadership__img1{
-  
+  height: 150px;
 }
 
 .about__title{
-  text-align: center;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -523,7 +542,14 @@ justify-content: center;
   float: none;
   line-height: 2;
   font-size: 18px;
+  color: #464646;
+  text-align: justify;
 }
+.bold{
+  color: black;
+  font-weight: bold;
+}
+
 .crca{
   text-decoration: none;
   color: black;
@@ -558,10 +584,8 @@ justify-content: center;
     font-size: 20px;
     
   }
-  .image{
-    max-height: 1000px;
-  }
-  .about--title{
+  
+  .about--title,.about--title1{
     padding-top: 30px;
   }
     body {
@@ -644,7 +668,16 @@ padding-right: 15px;
 
 
 @media (max-width: 1024px) {
-  
+  .leadership__img1{
+    
+    height: 200px;
+  }
+  .about--title1{
+    padding-top: 20px;
+  }
+  .about--title{
+    padding-top: 100px;
+  }
   .believe__para{
     max-width: 650px;
   }
@@ -700,7 +733,7 @@ padding-right: 15px;
   
     .story__layout {
       padding-bottom: 50px;
-      display: flex;
+      
     }
   
     .about__image--1 {
@@ -772,6 +805,9 @@ padding-right: 15px;
 
 /* Add this media query for screens up to 768px width */
 @media (max-width: 768px) {
+  .image{
+    max-width: 768;
+  }
     body {
       font-size: 12px;
     }
@@ -800,6 +836,7 @@ padding-right: 15px;
   
     .story__layout {
       padding-bottom: 30px;
+      display: flex;
     }
   
     .our__story,
