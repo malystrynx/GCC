@@ -92,6 +92,7 @@
 .inner__main--nav{
     display: flex;
     align-items: center;
+    padding-right: 50px;
 }
 
 .image{
