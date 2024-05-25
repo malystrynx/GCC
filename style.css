@@ -426,6 +426,10 @@ color: white;
   .vision{
     display: flex;
   }
+  .title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
 
 
@@ -460,7 +464,7 @@ line-height: 2;
 
 /* About */
 .vision, .about__story{
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -506,6 +510,7 @@ padding-bottom: 20px;
 }
 
 .about__text{
+  max-width: 80%;
   padding-bottom: 20px;
   margin: auto;
   float: none;
