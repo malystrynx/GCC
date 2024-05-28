@@ -264,6 +264,7 @@ padding-top:50px;
     line-height: 2;
     
 }
+
 .maps{
     display: flex;
     justify-content: center;
@@ -463,6 +464,19 @@ line-height: 2;
 
 
 /* About */
+.about__image{
+  height: 50vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center vertically */
+  background: linear-gradient(90deg, rgba(24,0,36,1) 0%, rgba(42,72,80,1) 64%, rgba(0,212,255,1) 100%);
+  color: white; /* Text color */
+  text-align: left;
+}
+.text__content{
+  font-size: 3rem;
+  padding-left: 50px;
+}
 .vision, .about__story{
   max-width: 90%;
   margin: auto;
@@ -491,6 +505,7 @@ line-height: 2;
   max-height: 90%; 
   bottom: 10%;
 }
+
 
 .about--title,.about--title1, .leadership__h2{
 font-size: 22.4px;
