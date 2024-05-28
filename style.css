@@ -19,9 +19,11 @@
     scroll-behavior: smooth;
     /* border-style: solid; */
 }
-.images{
+.images {
   max-width: 100%;
-  height: 400px;
+  width: 600px; /* Adjust the width to your preferred value */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  object-fit: cover; /* Ensures the image covers the specified dimensions while maintaining its aspect ratio */
 }
 .scrolling{
     position: fixed;
@@ -424,9 +426,14 @@ color: white;
     
     color: #000;
   }
-  .vision{
+  .vision {
     display: flex;
-  }
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+    gap: 20px; /* Adds space between the image and text */
+    padding: 20px; /* Adds padding around the container */
+}
   .title{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -465,7 +472,7 @@ line-height: 2;
 
 /* About */
 .about__image{
-  height: 50vh; /* Full viewport height */
+  height: 40vh; /* Full viewport height */
   width: 100%; /* Full width */
   display: flex; /* Flexbox for centering content */
   align-items: center; /* Center vertically */
@@ -524,14 +531,22 @@ padding-bottom: 20px;
 
 }
 
-.about__text{
-  max-width: 80%;
-  padding-bottom: 20px;
-  margin: auto;
-  float: none;
-  line-height: 1.5;
-  font-size: 18px;
-  
+.about__text {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.vision__text {
+  flex: 1; /* Allows the text container to grow and take available space */
+  min-width: 300px; /* Ensures a minimum width for the text container */
+  height: 400px; /* Sets the height of the text container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding is included in the total dimensions */
+  border: 1px solid #000; /* Adds a border to the text container for clarity */
+  background-color: #f5f5dc; /* Light beige background color */
 }
 
 .footer{
@@ -555,12 +570,10 @@ text-align: center;
 
 
 
-.about__title{
-  font-weight: bold;
-  padding-bottom: 10px;
-  text-align: center;
+.about--title {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
-
 
 
 
