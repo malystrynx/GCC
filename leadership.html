@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leadership</title>
-    <script src="https://kit.fontawesome.com/1256adce66.js" crossorigin="anonymous"></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="x-icon" href="./Pictures/G+logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/1256adce66.js" crossorigin="anonymous"></script>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    </head>
 <body>
     <section class="navigation">
 
@@ -45,69 +46,91 @@
             </div>
             
         </div>
-        <div>
-            <img class="image" height="400px" src="./jorg-angeli-CAMwIxYk5Xg-unsplash.jpg" alt="">
-            <h2 class="believe__top--title">Leadership</h2>
-        </div>
-    </section>
-    <section class="top">
-<img src="" alt="">
-    </section>
-    <section class="leadership">
-        <div class="layout__leadership">
-            <div class="leadership__img">
-                <img class="leadership__img1" src="./Pictures/ppaul.png" alt="">
-                <h2 class="leadership__h2">Rev. Paul Nam</h2>
-                
+        <div class="container">
+            <div class="about__image">
+                <p class="text__content">LEADERSHIP</p>
             </div>
-            <div class="leadership__text">
-                
-                <p class="about__story">
-                    <p class="about__title">Lead Pastor</p>
-                    <p class="believe__para">
+            
+            <!-- <div class="about__image--1">
+              <img class="retreat__pic" src="./Pictures/retreat.jpg" alt="">
+            </div> -->
+          </div>
+    </section>
+    <section class="about">
+<body>
+    <div class="leadership">
+        <img class="ppaul" src="./Pictures/ppaul.png" alt="">
 
-                    
+        <div class="vision__text">
+            <h2 class="about--title">Lead Pastor</h2>
+            <h3>Rev. Paul Nam</h3>
+            <div class="about__text">
+                <p class="about--para">
                     Pastor Paul Nam is the founder and Lead Pastor of Grace Community Chapel Sydney. Pastor Paul is a graduate of The George Washington University (B.A.) and The Southwestern Baptist Theological Seminary (M.Div).
-                    
-                    He is currently pursuing a Doctorate of Ministry in Discipleship from Talbot School of Theology.
+                    <br>
 
+                    He is currently pursuing a Doctorate of Ministry in Discipleship from Talbot School of Theology.
+                    <br>
                     
                     He also holds a Foundations of Biblical Counseling Certificate from Christian Counseling & Educational Foundation (CCEF).
+                    <br>
                     
                     He is ordained in the Christian Reformed Church of North America (CRCNA).
+                    <br>
                     
                     His greatest passion is for the church to raise bold, committed, and passionate disciples of Jesus Christ that will make a great impact for the Kingdom of God.
-                    
+                    <br>
                     His heart is for people to fall into a deep, love relationship with Jesus.
-
-Pastor Paul is a devoted husband to Deborah, and a grateful father to Karis, Kayla, Moses, and Matthew.
-</p>
-                    
-                    
-                    
-                    </p>
-                    <p class="contact__me">
-                        <a href="#contact">Contact Me Here</a>
-                    </p>
+                    <br>
+                    Pastor Paul is a devoted husband to Deborah, and a grateful father to Karis, Kayla, Moses, and Matthew.                </p>
             </div>
         </div>
-        </section>
-        <footer class="footer">
+    </div>
+
+
+
+
+    
+
+<footer class="footer">
+    <div class="wave-container">
+        <img src="./Pictures/pattern-dark-flipped.webp" alt="Pattern Background" class="wave">
+    </div>
+    <div class="footer-content">
+        <div class="contact-section">
             <p class="phone">
-                <i class="fa-solid fa-phone " style="color: #000000;"></i>
-                +61 0459 590 082</p>
-            <div>
-            
-                <p class="email">
-                    <i class="fa-solid fa-envelope fa-lg" style="color: #000000;"></i>
-                    info@gccsydney.org
-                </p>
-            </div>
-            
-            
-                </footer>
-                <br>
-                <br>
-                <br>
-    </body>
+                <i class="fas fa-phone" style="color: #ffffff;"></i>
+                +61 0459 590 082
+            </p>
+            <p class="email">
+                <i class="fas fa-envelope fa-lg" style="color: #ffffff;"></i>
+                info@gccsydney.org
+            </p>
+            <p class="address">
+                <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
+                27 Iron Street, North Parramatta, NSW 2151
+            </p>
+        </div>
+        <div class="email-us-section">
+            <h3>Contact Us</h3>
+            <form class="contact-form" action="mailto:info@gccsydney.org" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</footer>
+    </section>
+</body>
 </html>

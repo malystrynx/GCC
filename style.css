@@ -42,41 +42,86 @@
 }
 
 .footer {
-  position: relative;
-  background-color: #000000;
-  text-align: center;
-  padding: 40px 0;
-  overflow: hidden; /* Ensure any overflow is hidden */
-  color: #ffffff; /* Ensure text color is white */
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px 0; /* Padding for the footer */
+  text-align: center; /* Center the text */
 }
 
 .wave-container {
-  position: absolute;
-  top: -30px; /* Adjust this value based on your wave image height */
-  left: 0;
-  width: 100%;
-  height: 30px; /* Adjust this value based on your wave image height */
-  overflow: hidden;
-  z-index: 1; /* Position the background image behind the content */
+  margin-bottom: 20px; /* Space below the wave image */
 }
 
 .wave {
-  display: block;
-  width: 100%;
+  width: 100%; /* Make the wave image responsive */
   height: auto;
 }
 
 .footer-content {
-  position: relative;
-  z-index: 2; /* Ensure content appears above the background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.phone, .email {
-  margin: 10px 0;
+.contact-section {
+  margin-top: 20px; /* Space above the contact section */
 }
 
-.phone i, .email i {
-  margin-right: 8px;
+.contact-section p {
+  margin: 5px 0; /* Space between each contact item */
+  display: flex;
+  align-items: center;
+}
+
+.contact-section i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.email-us-section {
+  margin-top: 20px; /* Space above the email us section */
+  width: 100%;
+  max-width: 500px; /* Limit the width of the form */
+  text-align: left; /* Align text to the left */
+}
+
+.email-us-section h3 {
+  text-align: center; /* Center the heading */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #555; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-form button:hover {
+  background-color: #777; /* Darker button on hover */
 }
 /* nav bar */
 
@@ -359,7 +404,13 @@ color: white;
 .leadership__h2{
     color: black;
 }
+.ppaul{
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    border:10px solid #242424;
 
+}
 /* BORDERS FOR LOCATION AND TIME  */
 
 .column {
@@ -454,10 +505,8 @@ color: white;
     
     color: #000;
   }
-  .vision {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .vision, .leadership {
+    text-align: center;
     flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
     gap: 20px; /* Adds space between the image and text */
     padding: 20px; /* Adds padding around the container */
@@ -555,23 +604,9 @@ padding-bottom: 20px;
 
 /* Leadership */
 
-.leadership__img1{
-object-fit: cover;
-max-width: 20%;
-
-
+.leadership{
+  display: flex;
 }
-.leadership__img{
-text-align: center;
-}
-
-
-
-.about--title {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
 
 
 
