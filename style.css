@@ -592,14 +592,17 @@ padding-bottom: 20px;
 }
 
 .vision__text {
-  flex: 1; /* Allows the text container to grow and take available space */
-  min-width: 300px; /* Ensures a minimum width for the text container */
-  height: 400px; /* Sets the height of the text container */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 80%; /* Sets the maximum width of the text container to 80% of its parent container */
+  margin: auto; /* Centers the text container within its parent */
   padding: 20px;
   box-sizing: border-box; /* Ensures padding is included in the total dimensions */
+  display: flex;
+  flex-direction: column; /* Arranges the content vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+.about--title {
+  text-align: center; /* Centers the title text */
 }
 
 .footer{
