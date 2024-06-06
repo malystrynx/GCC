@@ -42,50 +42,47 @@
 }
 
 .footer {
-  background-color: #333; /* Background color for the footer */
-  color: #fff; /* Text color for the footer */
-  padding: 20px 0; /* Padding for the footer */
-  text-align: center; /* Center the text */
-}
-
-.wave-container {
-  margin-bottom: 20px; /* Space below the wave image */
-}
-
-.wave {
-  width: 100%; /* Make the wave image responsive */
-  height: auto;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 5px solid #ffcd00;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.contact-section {
-  margin-top: 20px; /* Space above the contact section */
+.contact-section, .email-us-section {
+  flex: 1 1 300px;
+  margin: 20px;
+  text-align: left;
 }
 
-.contact-section p {
-  margin: 5px 0; /* Space between each contact item */
+.contact-item {
   display: flex;
   align-items: center;
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
-.contact-section i {
-  margin-right: 10px; /* Space between icon and text */
-}
-
-.email-us-section {
-  margin-top: 20px; /* Space above the email us section */
-  width: 100%;
-  max-width: 500px; /* Limit the width of the form */
-  text-align: left; /* Align text to the left */
+.contact-item i {
+  margin-right: 10px;
+  color: #ffcd00;
 }
 
 .email-us-section h3 {
-  text-align: center; /* Center the heading */
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #ffcd00;
 }
 
 .contact-form {
@@ -94,34 +91,50 @@
 }
 
 .form-group {
-  margin-bottom: 15px; /* Space between form groups */
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px; /* Space between label and input */
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc; /* Border for inputs */
-  border-radius: 5px; /* Rounded corners for inputs */
-  box-sizing: border-box; /* Ensure padding is included in width */
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #555; /* Button background color */
-  color: #fff; /* Button text color */
   border: none;
-  border-radius: 5px; /* Rounded corners for button */
-  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px;
+  font-size: 1em;
 }
 
-.contact-form button:hover {
-  background-color: #777; /* Darker button on hover */
+.submit-button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #ffcd00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #e0b800;
+}
+
+.footer-bottom {
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
 /* nav bar */
 
@@ -391,32 +404,57 @@ color: white;
   }
 
 /* leadership */
-
-.layout__leadership{
-  justify-content: center;
+.leadership {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  
-}
-.leadership__text{
-  text-align: justify;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
-.leadership__h2{
-    color: black;
+.image-container {
+  flex: 1 1 150px;
+  text-align: center;
+  margin-right: 20px;
 }
-.ppaul{
-    max-width: 100%;
-    height: auto;
-    width: 350px;
-    border:10px solid #242424;
 
+.ppaul {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.rev{
-  font-size:24px ;
-  font-weight: 400;
+
+.vision__text {
+  flex: 3 1 600px;
 }
-.lead__title{
-  font-size: 32px !important;
+
+.about--title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.rev {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about--para {
+  margin-bottom: 10px;
 }
 /* BORDERS FOR LOCATION AND TIME  */
 
@@ -512,7 +550,7 @@ color: white;
     
     color: #000;
   }
-  .vision, .leadership {
+  .vision {
     text-align: center;
     flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
     gap: 20px; /* Adds space between the image and text */
@@ -612,11 +650,8 @@ padding-bottom: 20px;
 
 
 
-/* Leadership */
 
-.leadership{
-  display: flex;
-}
+
 
 
 
