@@ -251,8 +251,8 @@ text-align: center;}
     width: 100%;
 }
 
-.sydney{
-    color: #5978A9 ;
+.Sydney{
+    color: #3498db ;
 }
 .front{
   text-align: center;
@@ -280,12 +280,11 @@ h2{
     transition: opacity 0.5s; /* Smooth opacity transition */
 }
 
-
-.welcome{
-    font-size: 60px;
-}
 .welcome__font{
     font-size: 22px ;
+}
+.welcome{
+  font-size: 80px;
 }
 
 /* Information */
@@ -508,7 +507,60 @@ color: white;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate;
 } */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: #45a049;
+}
+
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 300px; /* Ensure the modal doesn't get too wide */
+  text-align: center; /* Center the text */
+  position: relative; /* Ensure the close button is positioned relative to the modal content */
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px; /* Adjust this value to move the button higher or lower */
+  right: 20px; /* Adjust this value to move the button left or right */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 @keyframes scroll{
     0%{
         transform: translateY(3px);
@@ -574,7 +626,8 @@ color: white;
   text-align: left;
 }
 .text__content{
-  font-size: 3rem;
+  font-size: 4rem;
+  padding-top: 80px;
   padding-left: 50px;
 }
 .vision, .about__story{
@@ -832,9 +885,7 @@ padding-right: 15px;
     .custom-position {
       margin-left: 0;
     }
-  .font__title{
-    font-size:80px;
-  }
+
   /* Leadership */
   .image{
     max-width: 100%;
