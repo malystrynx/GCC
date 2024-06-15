@@ -38,7 +38,6 @@ function handleScroll() {
     else{
         scrolling.classList.remove('active')
     }
-<<<<<<< HEAD
 }
 
 // script.js
@@ -67,6 +66,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-=======
->>>>>>> 3aeb7580de7293c43f9e04f084ae63a037a88839
 }
